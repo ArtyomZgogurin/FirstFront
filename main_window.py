@@ -1,4 +1,5 @@
 from tkinter import*
+import second_window
 root = Tk()
 root['bg'] = 'gainsboro'
 root.title('Узнать данные с Билдов')
@@ -7,10 +8,13 @@ root.resizable(width=True, height=True)
 
 def parser():
   print('скоро мы напишем парсер')
+  second_window.open_second_window()
 def comment():
   print('скоро мы напишем комментарий')
+  second_window.open_second_window()
 def way():
   print('скоро мы научимся искать')
+  second_window.open_second_window()
 
 #фрейм для поля парсера
 frame_par = Frame(root, bg='snow3', bd=5)
