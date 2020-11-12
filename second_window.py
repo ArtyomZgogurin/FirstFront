@@ -25,14 +25,3 @@ def second_window_par():
   info.pack()
   root.mainloop()
 
-def second_window_com():
-  root = Tk()
-  root['bg'] = 'gainsboro'
-  root.title('Комментарий отправлен')
-  root.geometry('300x200')
-  root.resizable(width=True, height=True)
-  frame_com = Frame(root, bg='cornsilk3', bd=5)
-  frame_com.place(relx=0.02, rely=0.15, relwidth=0.3, relheight=0.5)
-  info = Label(frame_com, text='Комментарий отправлен', font=30)
-  info.pack()
-  root.mainloop()
