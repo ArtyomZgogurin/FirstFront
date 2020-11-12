@@ -8,13 +8,13 @@ root.resizable(width=True, height=True)
 
 def parser():
   print('скоро мы напишем парсер')
-  second_window.open_second_window()
+  second_window.second_window_par()
 def comment():
   print('скоро мы напишем комментарий')
-  second_window.open_second_window()
+  second_window.second_window_com()
 def way():
   print('скоро мы научимся искать')
-  second_window.open_second_window()
+  second_window.second_window_par()
 
 #фрейм для поля парсера
 frame_par = Frame(root, bg='snow3', bd=5)
