@@ -1,19 +1,19 @@
 from tkinter import*
 
-def open_second_window()
+def second_window_par():
   root = Tk()
   root['bg'] = 'gainsboro'
   root.title('Результаты')
   root.geometry('750x500')
   root.resizable(width=True, height=True)
   
-  #фрейм для поля парсера
+  #Первый показатель
   frame_par = Frame(root, bg='cornsilk3', bd=5)
   frame_par.place(relx=0.02, rely=0.15, relwidth=0.3, relheight=0.5)
-  #фрейм для поля коммента
+  #Второй показатель
   frame_com = Frame(root, bg='cornsilk3', bd=5)
   frame_com.place(relx=0.34, rely=0.15, relwidth=0.3, relheight=0.5)
-  #фрейм для поля пути
+  #Третий показатель
   frame_way = Frame(root, bg='cornsilk3', bd=5)
   frame_way.place(relx=0.66, rely=0.15, relwidth=0.3, relheight=0.5)
   #info
@@ -22,5 +22,17 @@ def open_second_window()
   info = Label(frame_com, text='Второй показатель', font=30)
   info.pack()
   info = Label(frame_way, text='Третий показатель', font=30)
+  info.pack()
+  root.mainloop()
+
+def second_window_com():
+  root = Tk()
+  root['bg'] = 'gainsboro'
+  root.title('Комментарий отправлен')
+  root.geometry('300x200')
+  root.resizable(width=True, height=True)
+  frame_com = Frame(root, bg='cornsilk3', bd=5)
+  frame_com.place(relx=0.02, rely=0.15, relwidth=0.3, relheight=0.5)
+  info = Label(frame_com, text='Комментарий отправлен', font=30)
   info.pack()
   root.mainloop()
