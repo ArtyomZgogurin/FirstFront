@@ -1,5 +1,6 @@
 from tkinter import*
 import second_window
+from tkinter import messagebox
 root = Tk()
 root['bg'] = 'gainsboro'
 root.title('Узнать данные с Билдов')
@@ -11,7 +12,7 @@ def parser():
   second_window.second_window_par()
 def comment():
   print('скоро мы напишем комментарий')
-  second_window.second_window_com()
+  messagebox.showinfo('Комментарий отправлен','Отправленно')
 def way():
   print('скоро мы научимся искать')
   second_window.second_window_par()
