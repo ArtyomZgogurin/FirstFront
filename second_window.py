@@ -1,6 +1,6 @@
 from tkinter import*
 
-def second_window():
+def open_second_window()
   root = Tk()
   root['bg'] = 'gainsboro'
   root.title('Результаты')
